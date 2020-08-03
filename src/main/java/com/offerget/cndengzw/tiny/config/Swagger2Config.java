@@ -29,8 +29,8 @@ public class Swagger2Config {
                 .apiInfo(apiInfo())
                 .select()
                 //为当前包下controller生成API文档
-                //.apis(RequestHandlerSelectors.basePackage("com.macro.mall.tiny.controller"))
-                .apis(RequestHandlerSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("com.offerget.cndengzw.tiny.controller"))
+                //.apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
                 .build()
                 //添加登录认证
